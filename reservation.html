@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <title>FRIENDS Bistro Menu</title>
+  <style>
+    body {
+      background-image: url("img/bgimg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Acme', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    #carouselExampleCaptions {
+      height: 500px;
+      width: 800px;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 22px;
+      margin-left: 269px;
+    }
+
+    img {
+      height: 496px;
+      width: 800px;
+      border-radius: 15px;
+    }
+
+    .navbar {
+      height: 72px;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+      border-bottom: 2px solid black;
+    }
+
+    .container-fluid {
+      align-items: center;
+      font-weight: 900;
+      padding-bottom: 20px;
+    }
+
+    .navbar-nav {
+      margin-left: 315px;
+    }
+
+    .nav-link {
+      margin-top: 30px;
+      margin-right: 39px;
+      margin-bottom: 3px;
+      font-weight: 900;
+    }
+
+    .navbar-brand {
+      padding-top: 1.3125rem;
+      padding-left: 1rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    #h1en{
+      margin: 83px;
+      padding: 6px;
+      padding-left: 316px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);;
+    }
+
+    .formclass{
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      align-items: center;
+    }
+    .resform{
+      margin: 15px;
+      padding: 15px;
+      align-items: center;
+    }
+
+    .resform label{
+      font-size: 34px;
+    padding: 20px;
+    padding-left: 357px;
+    }
+    .frmitems{
+      height: 50px;
+      width: 200px;
+      border: 2px solid black;
+      border-radius: 20px;
+    }
+    .submit1{
+      margin-top: 44px;
+      margin-left: 455px;
+      height: 60px;
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 20px;
+      background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0.2) 75%, rgb(255, 255, 255) 100%);;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+
+    </script>
+  <nav class="navbar  navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">FRIENDS Bistro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 id="h1en">Enter the details for Reservation.</h1>
+  <div class="formclass">
+    <form action="" class="resform">
+      <label for="name">Enter your Name:</label>
+      <input type="text" id="name" name="name" class="frmitems">
+      <br>
+      <label for="date1">Select the date:</label>
+      <input type="date" id="date1" name="birthday" class="frmitems">
+      <br>
+      <label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt" class="frmitems">
+      <br>
+      <label for="name">Number of People:</label>
+      <input type="text" id="name" name="name" class="frmitems">
+      <br>
+      <input type="submit" class="submit1">
+    </form>
+  </div>
+</body>
+
+</html>
